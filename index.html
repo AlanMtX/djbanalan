@@ -43,13 +43,13 @@
         .container { max-width: 400px; width: 100%; text-align: center; position: relative; z-index: 1; }
         
         .profile-hub { 
-        width: 160px;  /* Aumentata la dimensione da 118px a 160px */
-        height: 160px; /* Aumentata la dimensione da 118px a 160px */
-        border-radius: 50%; /* Mantiene la forma circolare del contenitore */
-        /* border: 3px solid var(--accent); <- Questa riga è stata RIMOSSA per togliere il cerchio rosso */
-        margin: 20px auto 30px auto; /* Leggermente aggiustati i margini per bilanciare l'estetica */
+        width: 160px; 
+        height: 160px; 
+        border-radius: 25px; /* Questo crea il quadrato coi bordi arrotondati (prima era 50%) */
+        margin: 20px auto 30px auto; 
         overflow: hidden; 
-        background: transparent; /* Mantiene lo sfondo trasparente come concordato */
+        background: rgba(255, 255, 255, 0.7); /* Sfondo nero trasparente al 70% */
+        /* text-align: center; (se serve per centrare l'immagine interna) */
         }
         .profile-hub img { width: 100%; height: 100%; object-fit: cover; }
         
