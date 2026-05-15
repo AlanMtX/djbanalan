@@ -46,14 +46,18 @@
         .profile-hub img { width: 100%; height: 100%; object-fit: cover; }
         
         h1 { 
-        font-size: 1.5rem; 
+        font-size: 1.9rem; /* Scritta più grande (prima era 1.5) */
         margin: 10px 0 5px; 
-        font-weight: 800; 
-        /* Bordino nero di 1.5px per far risaltare il testo */
-        -webkit-text-stroke: 1.5px black;
-        /* Aggiungiamo anche una leggerissima ombra sotto per dare tridimensionalità */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
+        font-weight: 900;  /* Il massimo dello spessore ("cicciotto") */
+    
+        /* Bordo nero netto costruito con 4 ombre + l'ombra sfumata sotto */
+        text-shadow: 
+        -1.5px -1.5px 0 #000,  
+         1.5px -1.5px 0 #000,
+        -1.5px  1.5px 0 #000,
+         1.5px  1.5px 0 #000,
+         3px 3px 5px rgba(0, 0, 0, 0.8);
+            }
         .badge { background: var(--accent); padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; margin-bottom: 25px; display: inline-block; text-transform: uppercase; }
         
         /* Stile BIO Allineato */
