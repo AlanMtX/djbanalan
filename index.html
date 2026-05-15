@@ -42,7 +42,15 @@
 
         .container { max-width: 400px; width: 100%; text-align: center; position: relative; z-index: 1; }
         
-        .profile-hub { width: 110px; height: 110px; border-radius: 50%; border: 3px solid var(--accent); margin: 20px auto; overflow: hidden; background: transparent; }
+        .profile-hub { 
+        width: 160px;  /* Aumentata la dimensione da 118px a 160px */
+        height: 160px; /* Aumentata la dimensione da 118px a 160px */
+        border-radius: 50%; /* Mantiene la forma circolare del contenitore */
+        /* border: 3px solid var(--accent); <- Questa riga è stata RIMOSSA per togliere il cerchio rosso */
+        margin: 20px auto 30px auto; /* Leggermente aggiustati i margini per bilanciare l'estetica */
+        overflow: hidden; 
+        background: transparent; /* Mantiene lo sfondo trasparente come concordato */
+        }
         .profile-hub img { width: 100%; height: 100%; object-fit: cover; }
         
         h1 { 
