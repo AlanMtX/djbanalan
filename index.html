@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ BANALAN | Link</title>
+    <style>
+        :root { --bg: #0a0a0a; --card: #141414; --accent: #ff0000; --text: #fff; --sub: #888; --spot: #1DB954; }
+        body { font-family: sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; justify-content: center; padding: 20px; line-height: 1.5; }
+        .container { max-width: 400px; width: 100%; text-align: center; }
+        
+        .profile-hub { width: 110px; height: 110px; border-radius: 50%; border: 3px solid var(--accent); margin: 20px auto; overflow: hidden; background: #fff; }
+        .profile-hub img { width: 100%; height: 100%; object-fit: cover; }
+        
+        h1 { font-size: 1.5rem; margin: 10px 0 5px; font-weight: 800; }
+        .badge { background: var(--accent); padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; margin-bottom: 25px; display: inline-block; text-transform: uppercase; }
+        
+        /* Stile BIO Allineato */
+        details { background: var(--card); padding: 15px; border-radius: 12px; margin: 10px auto 25px; border: 1px solid #222; text-align: left; cursor: pointer; }
+        summary { font-weight: 600; color: var(--sub); outline: none; list-style: none; display: flex; justify-content: center; align-items: center; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: ' ▼'; font-size: 0.7rem; margin-left: 8px; transition: 0.3s; }
+        details[open] summary::after { transform: rotate(180deg); }
+        .bio-text { font-size: 0.85rem; color: #ccc; margin-top: 15px; line-height: 1.6; border-top: 1px solid #333; padding-top: 10px; }
+
+        .btn { display: flex; align-items: center; justify-content: center; background: var(--card); color: #fff; text-decoration: none; padding: 15px; border-radius: 10px; margin-bottom: 10px; border: 1px solid #222; font-weight: 600; transition: 0.2s; }
+        .btn:hover { border-color: var(--accent); background: #1c1c1c; transform: translateY(-2px); }
+        
+        .btn-main { background: var(--accent); border: none; box-shadow: 0 4px 15px rgba(255,0,0,0.2); }
+        .btn-spot { border-color: var(--spot); color: var(--spot); }
+        
+        .tag { text-align: left; font-size: 0.75rem; color: var(--sub); margin: 25px 0 8px 5px; text-transform: uppercase; letter-spacing: 1px; }
+        footer { margin-top: 50px; font-size: 0.7rem; color: #444; border-top: 1px solid #222; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-hub">
+            <img src="https://assets.indiefy.net/artist-images/1768980191939.jpg" alt="DJ BANALAN">
+        </div>
+        <h1>DJ BANALAN</h1>
+        <div class="badge">OFFICIAL ARTIST</div>
+
+        <details>
+            <summary>BIO</summary>
+            <div class="bio-text">
+                Bienvenido al mundo de DJ BANALAN. Este proyecto es una exploración inédita de la música latina contemporánea, donde la tradición se encuentra con la tecnología. Impulsado por una profunda pasión por la Timba, el Reparto, el Cubatón y la Bachata, fusiono la esencia de los grandes maestros cubanos con el potencial de la Inteligencia Artificial de vanguardia. DJ BANALAN no es solo música; es una salida creativa pura dedicada a innovar y compartir ritmos frescos con el mundo.
+                <br><br>
+                Welcome to the world of DJ BANALAN. This project is an original exploration of contemporary Latin music, where tradition meets technology. Driven by a deep passion for Timba, Reparto, Cubaton, and Bachata, I fuse the essence of Cuban masters with the power of cutting-edge Artificial Intelligence. DJ BANALAN is more than just music; it is a pure creative outlet dedicated to innovating and sharing fresh rhythms with the world.
+            </div>
+        </details>
+
+        <div class="tag">Release 26 May</div>
+        <a href="https://too.fm/b2dpjpp" class="btn btn-main">🔥 PRE-SAVE RUMBA SIN RELOJ</a>
+
+        <div class="tag">STREAMING</div>
+        <details>
+        <summary>CHANNELS</summary>
+          <div class="bio-text">
+            <a href="https://open.spotify.com/intl-it/artist/19zsFpCJ1MGg9tK6L7cSWx" class="btn btn-spot">🟢 Spotify</a>
+            <a href="https://www.youtube.com/@djbanalan" class="btn">🔴 YouTube</a>
+            <a href="https://tidal.com/@djbanalan" class="btn">⚫ Tidal</a>
+            <a href="https://link.deezer.com/s/33h5O8JS7KHyLBZPj8wgi" class="btn">🟣 Deezer</a>
+            <a href="https://soundcloud.com/djbanalan" class="btn">🟠 SoundCloud</a>
+          </div>
+        </details>
+
+        <div class="tag">MIX ON YOUTUBE</div>
+        <a href="https://youtu.be/JVnOTvHyRN8" class="btn">🇨🇺 Timba Dura Vol. 1</a>
+        <a href="https://youtu.be/QTPWFoRfE-A" class="btn">🇨🇺 Salsa Cubana Vol. 2</a>
+        <a href="https://youtu.be/Ien4tIWIloU" class="btn">🇩🇴 Bachata Vol. 1</a>
+
+        <footer>
+            © 2026 DJ BANALAN<br>
+            Privacy: This site does not use cookies and does not collect personal data.
+        </footer>
+    </div>
+</body>
+</html>
