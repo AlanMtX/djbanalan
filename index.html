@@ -14,15 +14,15 @@
     <meta name="twitter:description" content="Official links, music, and latest mixes.">
     <meta name="twitter:image" content="https://djbanalan.com/logoindie2low.jpg">
     <style>
-        :root { --bg: #2c2c2c; --card: #141414; --accent: #ff0000; --text: #fff; --sub: #888; --spot: #1DB954; }
+        :root { 
+            /* Ho reso i bottoni e la bio leggermente trasparenti (0.9) per far intravedere il metallo */
+            --card: rgba(25, 25, 25, 0.9); 
+            --accent: #ff0000; --text: #fff; --sub: #a0aabf; --spot: #1DB954; 
+        }
         
-        /* Nuovo Sfondo Honeycomb (Più chiaro) */
+        /* Sfondo Honeycomb "Metal" (Indiefy Style) */
         body { 
             font-family: sans-serif; 
-            background-color: var(--bg);
-            /* Ho cambiato stroke='%23333333' in stroke='%234a4a4a' per schiarire le linee */
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill-none='true' stroke='%234a4a4a' stroke-width='1' d='M0 12.25L14 4.083L28 12.25V28.583L14 36.75L0 28.583V12.25z'/%3E%3C/svg%3E");
-            background-size: 56px 98px;
             color: var(--text); 
             margin: 0; 
             display: flex; 
@@ -30,16 +30,14 @@
             padding: 20px; 
             line-height: 1.5; 
             min-height: 100vh;
-        }
-
-        /* Effetto sfumatura centrale (Alleggerito da 0.5 a 0.2) */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.2) 100%);
-            z-index: -1;
-            pointer-events: none;
+            
+            /* IL TRUCCO METAL: Sfondo grigio-azzurro sfumato + Reticolo argentato spesso */
+            background-color: #1e2229;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 56 98'%3E%3Cpath fill='none' stroke='%23505a6e' stroke-width='3' d='M0 24.5L28 8.166L56 24.5V57.166L28 73.5L0 57.166V24.5z'/%3E%3C/svg%3E"),
+                radial-gradient(circle at 50% 30%, #4b5363 0%, #1e2229 100%);
+            background-size: 56px 98px, 100% 100%;
+            background-attachment: fixed;
         }
 
         .container { max-width: 400px; width: 100%; text-align: center; position: relative; z-index: 1; }
