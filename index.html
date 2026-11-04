@@ -133,17 +133,32 @@
         .social-btn.tt:hover {
             color: #25F4EE;
         }
-        .player-wrapper {
-            width: 100%;
-            border-radius: 30px;
-            overflow: hidden;
-            margin-bottom: 10px;
+        .btn-audio {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          padding: 10px 14px;
+          gap: 6px;
+          cursor: default;
         }
 
-        .player-wrapper audio {
-            width: 100%;
-            display: block;
-            color-scheme: dark;
+        .btn-audio:hover {
+          transform: none; /* Evita che si alzi quando ci passi sopra col mouse */
+          border-color: #222;
+        }
+
+        .btn-audio .preview-text {
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          color: var(--sub);
+          letter-spacing: 1px;
+          text-align: left;
+        }
+
+        .btn-audio audio {
+          width: 100%;
+          height: 36px;
+          display: block;
         }
     </style>
 <link rel="icon" type="image/jpeg" href="logodb2low.png">
@@ -196,7 +211,7 @@
               <source src="promo.wav" type="audio/wav">
               Il tuo browser non supporta l'elemento audio.
         </audio>-->
-        <div class="player-wrapper">
+        <div class="btn btn-audio">
           <audio controls controlsList="nodownload" preload="auto" onended="this.currentTime = 0">
             <source src="promo.wav" type="audio/wav">
             Il tuo browser non supporta l'elemento audio.
