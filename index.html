@@ -160,6 +160,12 @@
           height: 36px;
           display: block;
         }
+        /* Applica l'inversione solo sui dispositivi mobili (sotto i 768px) */
+        @media (max-width: 768px) {
+          .btn-audio audio {
+            filter: invert(1) hue-rotate(180deg);
+          }
+        }
     </style>
 <link rel="icon" type="image/jpeg" href="logodb2low.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
