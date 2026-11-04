@@ -133,10 +133,16 @@
         .social-btn.tt:hover {
             color: #25F4EE;
         }
-        audio {
-          width: 100%;
-          max-width: 100%;
-          border-radius: 8px; /* armonizza l'arrotondamento con i pulsanti */
+        .player-wrapper {
+            width: 100%;
+            border-radius: 30px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .player-wrapper audio {
+            width: 100%;
+            display: block;
         }
     </style>
 <link rel="icon" type="image/jpeg" href="logodb2low.png">
@@ -189,8 +195,8 @@
               <source src="promo.wav" type="audio/wav">
               Il tuo browser non supporta l'elemento audio.
         </audio>-->
-        <div style="width: 100%; max-width: 320px; margin: 0 auto; border-radius: 30px; overflow: hidden;">
-          <audio controls controlsList="nodownload" preload="auto" onended="this.currentTime = 0" style="width: 100%; display: block;">
+        <div class="player-wrapper">
+          <audio controls controlsList="nodownload" preload="auto" onended="this.currentTime = 0">
             <source src="promo.wav" type="audio/wav">
             Il tuo browser non supporta l'elemento audio.
           </audio>
