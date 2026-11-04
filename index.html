@@ -133,6 +133,11 @@
         .social-btn.tt:hover {
             color: #25F4EE;
         }
+        audio {
+          width: 100%;
+          max-width: 100%;
+          border-radius: 8px; /* armonizza l'arrotondamento con i pulsanti */
+        }
     </style>
 <link rel="icon" type="image/jpeg" href="logodb2low.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -180,7 +185,7 @@
         <div class="tag">Release 09 Nov</div>
             <a href="https://too.fm/qqxa1e2" class="btn btn-main">🔥PRE-SAVE La Navidad Repartera🔥</a>
         <div class="tag">preview</div>
-        <audio controls preload="auto" onended="this.currentTime = 0">
+        <audio controls controlsList="nodownload" preload="auto" onended="this.currentTime = 0">
               <source src="promo.wav" type="audio/wav">
               Il tuo browser non supporta l'elemento audio.
         </audio>
